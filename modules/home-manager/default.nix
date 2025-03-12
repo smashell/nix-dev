@@ -6,7 +6,8 @@
     ./fzf.nix
     ./git.nix
     ./nushell.nix
-    ./nvim
+    #./nvim
+    ./avim
     ./shell.nix
     ./ssh.nix
     ./tldr.nix
@@ -29,51 +30,51 @@
     # define package definitions for current user environment
     packages = with pkgs; [
       # age
-      alejandra
-      argocd
-      asciidoctor
-      cacert
-      cachix
-      cb
-      cirrus-cli
-      comma
+      # alejandra
+      # argocd
+      # asciidoctor
+      # cacert
+      # cachix
+      # cb
+      # cirrus-cli
+      # comma
       coreutils-full
       curl
       d2
       diffutils
-      dive
+      # dive
       dotenvx
       fd
-      ffmpeg
+      # ffmpeg
       findutils
-      gawk
-      gdu
-      git-absorb
-      gnugrep
-      gnupg
-      gnused
-      grype
-      helm-docs
-      httpie
-      hurl
-      hyperfine
+      # gawk
+      # gdu
+      # git-absorb
+      # gnugrep
+      # gnupg
+      # gnused
+      # grype
+      # helm-docs
+      # httpie
+      # hurl
+      # hyperfine
       jetbrains-mono
-      jnv
-      kotlin
-      kubectl
-      kubectx
-      kubernetes-helm
-      kustomize
+      # jnv
+      # kotlin
+      # kubectl
+      # kubectx
+      # kubernetes-helm
+      # kustomize
       lazydocker
       luajit
-      mmv
-      nixd
-      nixfmt-rfc-style
-      nixpacks
-      nmap
-      nodejs_20
-      openldap
-      parallel
+      # mmv
+      # nixd
+      # nixfmt-rfc-style
+      # nixpacks
+      # nmap
+      # nodejs_20
+      # openldap
+      # parallel
       pre-commit
       # python with default packages
       (python3.withPackages (
@@ -89,21 +90,22 @@
           ]
       ))
       ranger
-      rclone
-      restic
-      rsync
-      ruff
+      # rclone
+      # restic
+      # rsync
+      # ruff
       shellcheck
-      skopeo
+      # skopeo
       starship
-      stylua
+      # stylua
       sysdo
       tree
-      trivy
-      uv
-      yadm
-      yq-go
+      # trivy
+      # uv
+      # yadm
+      # yq-go
       zoxide
+      gcc
     ];
   };
 
