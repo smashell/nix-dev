@@ -11,7 +11,7 @@
     ./ssh.nix
     ./tldr.nix
     ./tmux.nix
-    ./gnome.nix
+        #./gnome.nix
     ./nixpkgs.nix
   ];
 

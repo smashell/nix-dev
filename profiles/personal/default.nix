@@ -1,4 +1,4 @@
 {...}: {
-  user.name = "kclejeune";
+  user.name = "smashell";
   hm = {imports = [./home-manager];};
 }

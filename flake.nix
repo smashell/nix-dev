@@ -170,7 +170,7 @@
         # arch-independent configs that can operate on both x86_64-darwin and aarch64-darwin
         (map
           (system: {
-            "kclejeune@${system}" = mkDarwinConfig {
+            "smashell@${system}" = mkDarwinConfig {
               inherit system;
               extraModules = [./profiles/personal ./modules/darwin/apps.nix];
             };
@@ -190,7 +190,7 @@
       # generate nixos configs, if these are ever applicable
       mergeAttrsList [
         {
-          "kclejeune@x86_64-linux" = mkNixosConfig {
+          "smashell@x86_64-linux" = mkNixosConfig {
             system = "x86_64-linux";
             hardwareModules = [
               ./modules/hardware/phil.nix
@@ -205,9 +205,9 @@
       # generate home-manager configs for each supported platform
       mergeAttrsList (
         (map (system: {
-            "kclejeune@${system}" = mkHomeConfig {
+            "smashell@${system}" = mkHomeConfig {
               inherit system;
-              username = "kclejeune";
+              username = "smashell";
               extraModules = [./profiles/personal/home-manager];
             };
             "klejeune@${system}" = mkHomeConfig {
