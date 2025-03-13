@@ -22,8 +22,8 @@ in {
   #xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink configPath;
   #home.file.".config/nvim/init.vim".source = config.lib.file.mkOutOfStoreSymlink configPath;
   home.file.".config/nvim" = {
-    source = ./nvim;  # 指向本地的 nvim 配置目录
-    recursive = true;  # 递归链接整个目录
+    source = ./nvim;  
+    recursive = true;  # Recursively link the entire directory.
   };
 
   home.shellAliases = shellAliases;
@@ -71,8 +71,7 @@ in {
       plugins = with pkgs.vimPlugins; [
         # search all the plugins using https://search.nixos.org/packages
         telescope-fzf-native-nvim
-
-        nvim-treesitter.withAllGrammars
+        # nvim-treesitter.withAllGrammars
       ];
     };
   };
