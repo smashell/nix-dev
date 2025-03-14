@@ -59,8 +59,6 @@
     systemPackages = with pkgs; [
       # editors
       neovim
-      xsel
-      xclip
 
       # standard toolset
       coreutils-full

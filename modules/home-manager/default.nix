@@ -107,6 +107,7 @@
       zoxide
       gcc
       bottom
+      xclip
     ];
   };
 
