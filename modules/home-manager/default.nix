@@ -48,7 +48,7 @@
       # ffmpeg
       findutils
       # gawk
-      # gdu
+      gdu
       # git-absorb
       # gnugrep
       # gnupg
@@ -72,7 +72,7 @@
       # nixfmt-rfc-style
       # nixpacks
       # nmap
-      # nodejs_20
+      nodejs_20
       # openldap
       # parallel
       pre-commit
@@ -106,6 +106,7 @@
       # yq-go
       zoxide
       gcc
+      bottom
     ];
   };
 
