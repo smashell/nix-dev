@@ -10,7 +10,7 @@
     };
   };
   programs.git = {
-    userEmail = "kennan@case.edu";
-    userName = "Kennan LeJeune";
+    userEmail = "aliwong1980@gmail.com";
+    userName = "smashell";
   };
 }
