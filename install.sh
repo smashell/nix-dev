@@ -82,6 +82,10 @@ check_command_existence() {
     return $?
 }
 
+set_git_proxy() {
+    git config --global url."https://ghfast.top/https://github.com".insteadOf https://github.com
+}
+
 # Update hosts file
 update_hosts() {
     # Define start and end markers
@@ -183,6 +187,7 @@ show_tips() {
 
 # Call disable_selinux function
 #update_hosts
+set_git_proxy
 disable_selinux
 install_nix
 clone_nix_dev_repo
