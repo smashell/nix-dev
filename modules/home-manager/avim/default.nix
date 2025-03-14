@@ -72,27 +72,7 @@ in {
         # search all the plugins using https://search.nixos.org/packages
         telescope-fzf-native-nvim
         # nvim-treesitter.withAllGrammars
-        (nvim-treesitter.overrideAttrs (oldAttrs: {
-            config = {
-              ensure_installed = [ "python" "go" ];
-              sync_install = true;
-              auto_install = false;
-              highlight = {
-                enable = true;
-                additional_vim_regex_highlighting = false;
-              };
-              indent = { enable = true; };
-              incremental_selection = {
-                enable = true;
-                keymaps = {
-                  init_selection = "gnn";
-                  node_incremental = "grn";
-                  scope_incremental = "grc";
-                  node_decremental = "grm";
-                };
-              };
-            };
-          }))
+        (nvim-treesitter.withPlugins (p: [ p.python p.lua ]))
       ];
     };
   };
